@@ -4,6 +4,6 @@ package com.me.facade;
 public class JingMai {
 
     public void jingmai(){
-        System.out.print("开启经脉");
+        System.out.println("开启经脉");
     }
 }

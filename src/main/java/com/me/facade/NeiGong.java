@@ -4,9 +4,9 @@ package com.me.facade;
 public class NeiGong {
 
     public void JiuYang(){
-        System.out.print("使用九阳神功");
+        System.out.println("使用九阳神功");
     }
     public void QianKun(){
-        System.out.print("使用乾坤大挪移");
+        System.out.println("使用乾坤大挪移");
     }
 }
