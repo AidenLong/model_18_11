@@ -2,6 +2,7 @@ package com.me.singleton;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 使用容器实现单例模式
@@ -12,7 +13,7 @@ import java.util.Map;
  */
 public class SingletonManager {
 
-    private static Map<String, Object> objectMap = new HashMap<String, Object>();
+    private static Map<String, Object> objectMap = new ConcurrentHashMap<>();
 
     public static void registerService(String key, Object instance) {
         if (!objectMap.containsKey(key)) {
